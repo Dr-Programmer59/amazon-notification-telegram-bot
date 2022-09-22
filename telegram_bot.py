@@ -24,7 +24,9 @@ def greet(message):
             details=[]
             with open("links.csv","r",encoding="utf-8") as f:
                 for i in csv.reader(f):
-                    messageTosend+=f"\n{i[0]}={i[1]}"
+                   details.append(i)
+            print(details)
+               
 
           
             bot.reply_to(message,messageTosend,parse_mode= 'Markdown')
