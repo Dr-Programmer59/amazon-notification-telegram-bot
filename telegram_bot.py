@@ -2,13 +2,12 @@
 import telebot
 from telebot import types
 import csv
-api_key="5327290298:AAFID4f3m3lVo4k3ymVtkFRUS5gEKG4oimM"
+api_key="ADD-YOUR-API-KEY"
 bot=telebot.TeleBot(api_key)
 
 
 
 
-# use full phone number including + and country code
 def greet(message):
     print(str(message.from_user.username))
     bot.reply_to(message,"Hi,How are you?")
